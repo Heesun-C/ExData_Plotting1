@@ -26,7 +26,7 @@ par(mfrow = c(2,2))
 
 ## top-left
 plot(x_axis, subdata$Global_active_power, xaxt="n", type="l",
-     xlab="", ylab="Global Active Power (kilowatts)")
+     xlab="", ylab="Global Active Power")
 r <- round(range(x_axis), "days")
 axis.POSIXct(1, at = seq(r[1], r[2], by="days"), format = "%a")
 
